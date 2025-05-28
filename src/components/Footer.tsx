@@ -35,9 +35,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl flex items-center justify-center">
-                <span className="font-bold text-white text-xl">TB</span>
-              </div>
+              <img
+  src={TrexByteLogo}
+  alt="TrexByte Logo"
+  className="w-16 h-16 object-contain rounded-xl"
+/>
               <span className="font-bold text-3xl bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                 TrexByte
               </span>
