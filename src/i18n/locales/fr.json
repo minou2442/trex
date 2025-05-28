@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Centre d'Innovation Numérique",
+    "title1": "Créer des Solutions",
+    "title2": "Numériques",
+    "description": "Nous créons des sites web de pointe pour le commerce, les cliniques, les pharmacies et les clubs. Ainsi que des systèmes ERP, des applications mobiles, de la gestion de bases de données et des outils basés sur l'IA pour les entrepreneurs modernes.",
+    "cta1": "Voir Nos Projets",
+    "cta2": "Démarrer un Projet",
+    "badge1": "Propulsé par IA",
+    "badge2": "Compatible Cloud",
+    "stats": {
+      
+      "satisfaction": "Satisfaction Client",
+      "support": "Support"
+    }
+  },
+  "about": {
+    "badge": "À Propos de TrexByte",
+    "title1": "Transformer les Idées",
+    "title2": "En Réalité Numérique",
+    "description": "Basée à Jijel, Algérie, nous sommes une équipe passionnée de développeurs et designers créant des solutions numériques innovantes pour les entreprises du monde entier. Des startups aux grandes entreprises, nous donnons vie à votre vision.",
+    "overlay": {
+      "title": "De Jijel au Monde",
+      "description": "Une équipe créative et motivée prête à relever tous les défis techniques"
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Solutions de pointe avec les dernières technologies"
+      },
+      "quality": {
+        "title": "Qualité",
+        "description": "Code propre, testé et maintenable"
+      },
+      "security": {
+        "title": "Sécurité",
+        "description": "Sécurité de niveau entreprise dans chaque solution"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Travailler ensemble pour atteindre vos objectifs"
+      }
+    }
+  },
+  "footer": {
+    "description": "Équipe de développement innovante basée à Jijel, Algérie, spécialisée dans la création de solutions numériques de pointe pour les entreprises du monde entier. Nous transformons les idées en expériences numériques puissantes.",
+    "quickLinks": "Liens Rapides",
+    "servicesTitle": "Services",
+    "links": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "services": "Services",
+      "projects": "Projets",
+      "contact": "Contact"
+    },
+    "services": {
+      "web": "Développement Web",
+      "mobile": "Applications Mobiles",
+      "erp": "Systèmes ERP",
+      "ai": "Solutions IA",
+      "ui": "Design UI/UX",
+      "consulting": "Conseil"
+    },
+    "copyright": "Fait avec",
+    "location": "à Jijel, Algérie",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "cookies": "Politique de Cookies"
+  }
+}

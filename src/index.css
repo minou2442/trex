@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hadha css ta3 dark theme w animations */
+@layer base {
+  :root {
+    --color-primary: 199 89% 48%;
+    --color-secondary: 262 83% 58%;
+    --color-accent: 326 100% 59%;
+    --color-darkBlue-50: 217 33% 97%;
+    --color-darkBlue-100: 217 27% 92%;
+    --color-darkBlue-200: 215 25% 81%;
+    --color-darkBlue-300: 217 19% 69%;
+    --color-darkBlue-400: 218 17% 57%;
+    --color-darkBlue-500: 220 16% 45%;
+    --color-darkBlue-600: 221 21% 37%;
+    --color-darkBlue-700: 224 31% 29%;
+    --color-darkBlue-800: 226 43% 18%;
+    --color-darkBlue-900: 228 45% 11%;
+    --color-darkBlue-950: 228 42% 7%;
+  }
+}
+
+/* Code background styles */
+.code-background {
+  position: relative;
+  overflow: hidden;
+  animation: scrollCode 120s linear infinite;
+}
+
+@keyframes scrollCode {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* RTL support for Arabic */
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}

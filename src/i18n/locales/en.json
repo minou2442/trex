@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Digital Innovation Hub",
+    "title1": "Building Digital",
+    "title2": "Solutions",
+    "description": "We craft cutting-edge websites for commerce, clinics, pharmacies, and clubs. Plus ERP systems, mobile apps, database management, and AI-powered tools for modern entrepreneurs.",
+    "cta1": "View Our Work",
+    "cta2": "Start Project",
+
+    "badge2": "Cloud Ready",
+    "stats": {
+      
+      "satisfaction": "Client Satisfaction",
+      "support": "Support"
+    }
+  },
+  "about": {
+    "badge": "About TrexByte",
+    "title1": "Transforming Ideas",
+    "title2": "Into Digital Reality",
+    "description": "Based in Jijel, Algeria, we're a passionate team of developers and designers creating innovative digital solutions for businesses worldwide. From startups to enterprises, we bring your vision to life.",
+    "overlay": {
+      "title": "From Jijel to Global",
+      "description": "A creative and motivated team ready to tackle any technical challenge"
+    },
+    "values": {
+      "title": "Our Core Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Cutting-edge solutions with the latest technologies"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Clean, tested, and maintainable code standards"
+      },
+      "security": {
+        "title": "Security",
+        "description": "Enterprise-grade security in every solution"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Working together to achieve your goals"
+      }
+    }
+  },
+  "footer": {
+    "description": "Innovative development team based in Jijel, Algeria, specializing in creating cutting-edge digital solutions for businesses worldwide. We transform ideas into powerful digital experiences.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Services",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "services": {
+      "web": "Web Development",
+      "mobile": "Mobile Apps",
+      "erp": "ERP Systems",
+      "ai": "AI Solutions",
+      "ui": "UI/UX Design",
+      "consulting": "Consulting"
+    },
+    "copyright": "Made with",
+    "location": "in Jijel, Algeria",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  }
+}
