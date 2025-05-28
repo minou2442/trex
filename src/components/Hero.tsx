@@ -191,7 +191,7 @@ export default App;
               {/* Main image */}
               <div className="relative aspect-square overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/7792811/pexels-photo-7792811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="https://img.freepik.com/premium-photo/various-computer-equipment-with-programming-code-screens-table-dark-room-cyber-security-concept-copy-space_236854-23136.jpg"
                   alt="Programming on a dark background"
                   className="w-full h-full object-cover"
                 />
