@@ -1,6 +1,7 @@
-"use client"
-import { motion } from "framer-motion"
-import { ArrowRight, Sparkles, Zap } from "lucide-react"
+"use client";
+
+import { motion } from "framer-motion";
+import { ArrowRight, Sparkles, Zap } from "lucide-react";
 
 export default function Hero() {
   const containerVariants = {
@@ -11,7 +12,7 @@ export default function Hero() {
         staggerChildren: 0.3,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { y: 30, opacity: 0 },
@@ -23,7 +24,7 @@ export default function Hero() {
         ease: "easeOut",
       },
     },
-  }
+  };
 
   const floatingVariants = {
     animate: {
@@ -31,14 +32,180 @@ export default function Hero() {
       rotate: [0, 5, -5, 0],
       transition: {
         duration: 4,
-        repeat: Number.POSITIVE_INFINITY,
+        repeat: Infinity,
         ease: "easeInOut",
       },
     },
-  }
+  };
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+
+      {/* 🧠 Typing-style code background */}
+      <div className="absolute inset-0 z-0 pointer-events-none opacity-10">
+        <pre className="text-xs md:text-sm text-cyan-400 whitespace-pre-wrap p-4 h-full overflow-hidden select-none">
+{`// TrexByte Background Code
+import React from 'react';
+import { createClient } from '@supabase/supabase-js';
+
+const client = createClient(SUPABASE_URL, SUPABASE_KEY);
+
+function App() {
+  return (
+    <div>
+      <h1>Welcome to TrexByte</h1>
+    </div>
+  );
+}
+  interface User {
+  id: string;
+  name: string;
+  email: string;
+  role: 'admin' | 'user' | 'developer';
+}
+
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_KEY
+);
+
+export function useAuth() {
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Check active session
+    const session = supabase.auth.getSession();
+    
+    setUser(session ? session.user : null);
+    setLoading(false);
+    
+    // Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (_event, session) => {
+        setUser(session?.user ?? null);
+        setLoading(false);
+      }
+    );
+    
+    return () => {
+      subscription?.unsubscribe();
+    };
+  }, []);
+
+  async function signIn({ email, password }: { 
+    email: string; 
+    password: string 
+  }) {
+    try {
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+      
+      if (error) {
+        throw error;
+      }
+      
+      return { success: true };
+    } catch (error) {
+      console.error('Error signing in:', error);
+      return { 
+        success: false, 
+        error: error.message 
+      };
+    }
+  }
+
+  async function signOut() {
+    try {
+      const { error } = await supabase.auth.signOut();
+      if (error) {
+        throw error;
+      }
+    } catch (error) {
+      console.error('Error signing out:', error);
+    }
+  }
+
+  return
+  interface User {
+  id: string;
+  name: string;
+  email: string;
+  role: 'admin' | 'user' | 'developer';
+}
+
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_KEY
+);
+
+export function useAuth() {
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Check active session
+    const session = supabase.auth.getSession();
+    
+    setUser(session ? session.user : null);
+    setLoading(false);
+    
+    // Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (_event, session) => {
+        setUser(session?.user ?? null);
+        setLoading(false);
+      }
+    );
+    
+    return () => {
+      subscription?.unsubscribe();
+    };
+  }, []);
+
+  async function signIn({ email, password }: { 
+    email: string; 
+    password: string 
+  }) {
+    try {
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+      
+      if (error) {
+        throw error;
+      }
+      
+      return { success: true };
+    } catch (error) {
+      console.error('Error signing in:', error);
+      return { 
+        success: false, 
+        error: error.message 
+      };
+    }
+  }
+
+  async function signOut() {
+    try {
+      const { error } = await supabase.auth.signOut();
+      if (error) {
+        throw error;
+      }
+    } catch (error) {
+      console.error('Error signing out:', error);
+    }
+  }
+
+  return
+export default App;
+`}
+        </pre>
+      </div>
+
       {/* Floating elements */}
       <motion.div
         variants={floatingVariants}
@@ -73,14 +240,8 @@ export default function Hero() {
               <br />
               <motion.span
                 className="text-slate-800 dark:text-white"
-                animate={{
-                  backgroundPosition: ["0%", "100%", "0%"],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Number.POSITIVE_INFINITY,
-                  ease: "linear",
-                }}
+                animate={{ backgroundPosition: ["0%", "100%", "0%"] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
               >
                 Solutions
               </motion.span>
@@ -119,9 +280,7 @@ export default function Hero() {
             {/* Stats */}
             <motion.div variants={itemVariants} className="flex gap-8 mt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent">
-                  
-                </div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent"></div>
                 <div className="text-sm opacity-70"></div>
               </div>
               <div className="text-center">
@@ -139,6 +298,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
+          {/* Right Image Area */}
           <motion.div
             initial={{ opacity: 0, x: 100, rotateY: -15 }}
             animate={{ opacity: 1, x: 0, rotateY: 0 }}
@@ -146,7 +306,6 @@ export default function Hero() {
             className="relative"
           >
             <div className="relative">
-              {/* Main image */}
               <motion.div
                 whileHover={{ scale: 1.02, rotateY: 5 }}
                 transition={{ duration: 0.3 }}
@@ -162,15 +321,8 @@ export default function Hero() {
 
               {/* Floating cards */}
               <motion.div
-                animate={{
-                  y: [0, -10, 0],
-                  rotate: [0, 2, 0],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Number.POSITIVE_INFINITY,
-                  ease: "easeInOut",
-                }}
+                animate={{ y: [0, -10, 0], rotate: [0, 2, 0] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -top-6 -left-6 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700"
               >
                 <div className="flex items-center gap-3">
@@ -180,16 +332,8 @@ export default function Hero() {
               </motion.div>
 
               <motion.div
-                animate={{
-                  y: [0, 10, 0],
-                  rotate: [0, -2, 0],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Number.POSITIVE_INFINITY,
-                  ease: "easeInOut",
-                  delay: 1,
-                }}
+                animate={{ y: [0, 10, 0], rotate: [0, -2, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                 className="absolute -bottom-6 -right-6 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700"
               >
                 <div className="flex items-center gap-3">
@@ -202,5 +346,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
