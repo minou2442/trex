@@ -1,5 +1,6 @@
 import { Heart, Facebook, Instagram, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import TrexByteLogo from "../assets/trexbyte-logo.png"; // ✅ Import the logo
 
 export default function Footer() {
   const { t } = useTranslation();
